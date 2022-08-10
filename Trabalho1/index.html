@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalho-1</title>
+    </head>
+    <body>
+        <div>
+            <h1>Trabalho-1 DesenvolvimentoWeb</h1>
+            <br>
+            <h2>Introdução a linguagem HTML</h2>
+            <p>Este artigo tem como objetivo apresentar os conceitos básicos para o desenvolvimento de páginas Web utilizando a linguagem html, com o intuito de possibilitar que você seja capaz de criar seu primeiro site. <br>
+            &nbsp&nbsp&nbsp&nbsp&nbspPor esse motivo este arquivo está dividido nos seguintes topicos: </p>
+            <ol>
+                <li><a href="#Text1">O que é HTML?</a> </li>
+                <li><a href="#Text2">Estrutura básica de documento HTML.</a></li>
+                <li><a href="#Text3">Sintaxe das <em>Tags</em> HTML.</a></li>
+                <li><a href="#Text4">Principais <em>Tags</em>.</a></li>
+            </ol>
+            <div>
+                <br>
+                <div>
+                    <h3 id="Text1">O que é HTML?</h3>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbspHTML ou Linguagem de Marcação de HiperTexto (do inglês, <em>Hypertext Markup language</em>), por mais que muitos possam pensar, não se trata de uma linguagem de programação, 
+                        mas sim, como explícito no nome, de uma linguagem de marcação, a qual utiliza de elementos denominados <em>tags</em> para estruturar e definir como o conteudo do site irá aparecer para o usuário.
+                        Desse modo, quando acesssamos sites ou aplicações Web, o navegador renderiza esses arquivos escritos em HTML para saber como será apresentado o conteúdo.  <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbspPor consequencia disso, podemos dizer que a linguagem HTML é o "esqueleto" ou a essência do site, visto que é impossível construir uma pagina Web sem HTML. </p>     
+                </div>
+                <br>
+                <div>
+                    <h3 id="Text2">Estrutura básica de documento HTML. </h3>
+                    <p>A <strong>estrutura básica de um documento HTML</strong> é construida por tags, como pode ver na imagem abaixo, que são necessárias para que o documento seja renderizado corretamente pelo navegador.  </p>
+                    <figure>
+                        <img src="Imagens/EstruturaBasica.png" alt="Codigo fonte da estrutura basica HTML" title="Estrutura_Basica">
+                        <figcaption>
+                            <strong>Imagem 1</strong>. Estrutura básica de um documento HTML.
+                            <strong>Fonte:</strong> Do autor.
+                        </figcaption>
+                    </figure>
+                    <p>Como citado acima, a estrutura básica de um documento HTML contém determinadas <em>tags</em> que são essênciais para que o navegador possa interpretar o documento corretamente, elas são:</p>
+                    <ul>
+                        <li>
+                            <strong><u> &lt;!DOCTYPE hmtl&gt;</u>:</strong>
+                            <span>Essa <em>tag</em> deve ser escrita sempre na primeira linha, pois é a partir dela que o navegador interpreta qual versão do HTML a pagina está escrita.</span>
+                        </li>
+                        <li>
+                            <strong><u> &lt;hmtl&gt;</u>:</strong>
+                            <span>A abertura e o fechamento dessa <em>tag</em> delimita o documnento, ou seja, tudo que o site conterá, nesse contexto, todas as demais <em>tags</em> devem estar dentro dela.</span>
+                        </li>
+                        <li>
+                            <strong><u> &lt;head&gt;</u>:</strong>
+                            <span>A abertura e o fechamento dessa <em>tag</em> define o cabeçalho do documento HTML, isto é, um espaço onde você pode colocar instruções para o navegador sobre o conteúdo do site sem ser visível para o usuário.</span>
+                        </li>
+                        <li>
+                            <strong><u> &lt;meta&gt;</u>:</strong>
+                            <span>Essa <em>tag</em>, nesse caso, especifica qual conjunto de caracteres será usado para renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o mais utilizado em páginas web.</span>
+                        </li>
+                        <li>
+                            <strong><u> &lt;title&gt;</u>:</strong>
+                            <span>Essa <em>tag</em> define o titulo da página.</span>
+                        </li>
+                        <li>
+                            <strong><u> &lt;body&gt;</u>:</strong>
+                            <span>A abertura e p fechamento dessa <em>tag</em> delimita o corpo do documento, ou seja, diferente da <em>tag head</em> nessa vão estar o conteudo que aparecerá para o usuário.</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <br>
+
+                <div>
+                    <h3 id="Text3">Sintaxe das Tags HTML.</h3>
+                    <p>
+                        &nbsp&nbsp&nbsp&nbsp&nbspComo explicado anteriormente, um documento HTML é composto por uma serie de elementos, também denominados <em>tags</em>, que são server para anexar, envolver ou marcar
+                        diferentes partes do conteúdo para que o mesmo apareça ou aja de uma certa maneira. Por esse motivo, é importante entendermos como é constituido a estrutura de uma <em>tag</em>. <br> 
+                        &nbsp&nbsp&nbsp&nbsp&nbspContudo, antes de entrarmos nesse contexto, vale a pena relatar que existem dois tipos de <em>tags</em>, as que precisam de <em>tag</em> de fechamento, como a <em>tag</em> &lt;p&gt;, conhecidas como <em>tags</em> compostas, e as que não precisam
+                        de <em>tag</em> de fechamento, como a <em>tag</em> &lt;br&gt;, conhecidas como <em>tags</em> simples.
+                    </p>
+                    <p>
+                        &nbsp&nbsp&nbsp&nbsp&nbspDando continuidade, a estrutura de uma <em>tag</em> segue o seguinte padrão, na de abertura temos os sinais de maior ("&lt;") e menor ("&gt;") com o nome da tag entre esses sinais. Já a de fechamento segue o mesmo padrão que a de abertura, todavia, com um diferencial,
+                        nela conterá um sinal de barra ("/") antes do nome da tag, indicando que essa é uma tag de fechamento. E por fim, temos o conteúdo que estará entres as <em>tags</em> de abertura e fechamento.<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbspPodemos ter uma visualização melhor de como é a estrutura de um <em>tag</em> com a imagem a seguir:
+                    </p>
+                    <figure>
+                        <img src="Imagens/EstruturaTag.png" alt="Exemplo de estrutura de uma Tag" title="Estrutura_Tag">
+                        <figcaption>
+                            <strong>Imagem 2</strong>. Estrutura de uma <em>Tag</em> <br>
+                            <strong>Fonte:</strong><a href="https://clearlydecoded.com/anatomy-of-html-tag">https://clearlydecoded.com/anatomy-of-html-tag</a>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        &nbsp&nbsp&nbsp&nbsp&nbspAs <em>tags</em> também podem conter atributos e valores, que podem ser utilizadas desde indentifica-la diferente de outras <em>tags</em> iguais quanto modificar suas caracteristicas, dependendo
+                        do atributo utilizado e dos seus valores. Podemos ter uma ideia melhor desse conceito, analisando a imagem abaixo, onde temos a propriedade "id" (nome do atributo), que comumente é utilizado para diferenciar uma ou mais <em>tags</em>, e o seu valor "myId" que configura como aquela <em>tag</em> será identificada.
+                    </p>
+                    <figure>
+                        <img src="Imagens/tagAtributo.png" alt="Exemplo de uso de um atributo em uma Tag" title="Atributo_Tag">
+                        <figcaption>
+                            <strong>Imagem 3</strong>. Uso de atributos em uma <em>Tag</em>. <br>
+                            <strong>Fonte:</strong> <a href="https://clearlydecoded.com/anatomy-of-html-tag">https://clearlydecoded.com/anatomy-of-html-tag</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <br>
+                <div>
+                    <h3 id="Text4">Principais Tags.</h3>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbspEsse bloco tem como finalidade apresentar, além das <em>tags</em> essenciais introduzidas anteriormente, as <em>tags</em> mais utilizadas no processo de desenvolvimento Web.</p>
+                    <ol>
+                        <li>
+                            <h4>Formatação de texto</h4>
+                            <p>&nbsp&nbsp&nbsp&nbsp&nbspAs tags de formatação de texto ajudam a destacar trechos da parte escrita da página, como deixar um texto em negrito ou em itálico</p>
+                            <ul>
+                                <li><mark>&lt;b&gt;</mark> e <mark>&lt;strong&gt;</mark>: para textos em negrito ou forte;</li>
+                                <li><mark>&lt;i&gt;</mark> e <mark>&lt;em&gt;</mark>: para textos em itálico/ênfase;</li>
+                                <li><mark>&lt;code&gt;</mark>: para textos com configuração de códigos;</li>
+                                <li><mark>&lt;samp&gt;</mark>: saida de um programa;</li>
+                                <li><mark>&lt;kbd&gt;</mark>: entrada via teclado;</li>
+                                <li><mark>&lt;var&gt;</mark>: <em>tag</em> para descrever variaveis;</li>
+                                <li><mark>&lt;sup&gt;</mark> e <mark>&lt;sub&gt;</mark>: para trechos sobrescritos e subscrito, respectivamente;</li>
+                                <li><mark>&lt;small&gt;</mark>: para textos menores que o padrão;</li>
+                                <li><mark>&lt;mark&gt;</mark> para texto glifado.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Cabeçalhos</h4>
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbspCabeçalhos são normalmente utilizados para identificar seções e possuem aparência diferenciada do restante do texto. 
+                                No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags h1, h2, h3, h4, h5 e h6, sendo h1 o maior/mais relevante e h6 o menor/menos relevante. <br>
+                                &nbsp&nbsp&nbsp&nbsp&nbspNas imagens abaixo é possível ver como utilizar essas <em>tags</em>, bem como o resultado de seus usos em uma pagina Web.
+                            </p>
+                            <figure>
+                                <img src="Imagens/titulo.png" alt="Exemplo do uso de Titulos" title="Tag_h1">
+                                <figcaption>
+                                    <strong>Imagem 4</strong>.Diferentes níveis de Titulos. <strong>Fonte:</strong> Do autor.
+                                </figcaption>
+                                <br>
+                                <img src="Imagens/tituloexemplo.png" alt="resultado das tags de titulos" title="Resultado_h1">
+                                <figcaption>
+                                    <strong>Imagem 5</strong>.Diferentes níveis de Titulos. <strong>Fonte:</strong> Do autor.
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <h4>Parágrafos em HTML</h4>
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbspPor meio das <em>tags</em> &lt;p&gt; e &lt;/p&gt; é possivel dividir o conteúdo em parágrafos, ou seja, dividir o conteudo em pequenos blocos. <br>
+                                &nbsp&nbsp&nbsp&nbsp&nbspComo podemos ver um exemplo do uso dessa <em>tag</em> e como ela se porta numa pagina Web com as imagens abaixo.
+                            </p>
+                            <figure>
+                                <img src="Imagens/.png" alt="uso da tag de parágrafos" title="Tag de parágrafos">
+                                <figcaption>
+                                    <strong>Imagem 6</strong>.Utilizando Paragrafos <strong>Fonte:</strong> Do autor.
+                                </figcaption>
+                                <br>
+                                <img src="Imagens/Resultadop.png" alt="Uso da tag de parágrafos" title="Tag de parágrafos">
+                                <figcaption>
+                                    <strong>Imagem 7</strong>.Utilizando Paragrafos <strong>Fonte:</strong> Do autor.
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <h4>Imagens no HTML</h4>
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbspUtilizando a <em>tag</em> &lt;img&gt; conseguimos inserir imagens em uma página HTML, o qual recebe dois atributos, o primeiro chamado de "src" 
+                                (abreviação de, Source) que se encarrega de indexar o caminho/endereço da imagem, e o segundo chamado de "alt" (abreviação de, Alt text) responsavel por descrever a imagem caso ela não seja renderizada. <br>
+                                &nbsp&nbsp&nbsp&nbsp&nbspOutras <em>tags</em> que andam ao lado da <em>tag</em> &lt;img&gt; são as <em>tags</em> &lt;figure&gt;, um elemento que gera um bloco especifico pra inserir uma figura e descreve-lá ao utilizar
+                                a <em>tag</em> &lt;figcaption&gt;, responsavel por criar uma legenda pra a imagem inserida.
+                            </p>
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbspNas imagens 8 e 9 podemos ver um exemplo de como todas as tags apresentadas anteriormente se relacionam e o seu resultado em uma pagina Web.
+                                Na primeira <em>tag</em>  &lt;img&gt; é inserido uma imagem existem, e na segunda uma imagem inexistente. 
+                            </p>
+                            <figure>
+                                <img src="Imagens/Imagem1.png" alt="Uso da tag img" title="Tag_img">
+                                <figcaption>
+                                    <strong>Imagem 8</strong>. Exemplo do uso da tag img. <strong>Fonte</strong>: Do autor. 
+                                </figcaption>
+                                <br>
+                                <img src="Imagens/Imagem2.png" alt="Resultado da tag img" title="Tag_img">
+                                <figcaption>
+                                    <strong>Imagem 9</strong>. Exemplo do uso da tag img. <strong>Fonte</strong>: Do autor.
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <h4>Listas no HTML</h4>
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbspNo HTML, assim como no dia a dia, as lista são elementos uteis para organizar e ordenar itens/tarefas que estão relacionadas. 
+                                Sendo os mesmos criados utilizando as <em>tags</em> &lt;ul&gt; e &lt;ol&gt;, lista não ordenadas e ordenadas respectivamentes, e seus itens representados
+                                pela <em>tag</em> &lt;li&gt;. 
+                            </p>
+                            <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbspNas imagens abaixo, podemos ver como são utilizadas as <em>tags</em> de lista no codigo HTML e como elas ficam representadas numa pagina Web.
+                            </p>
+                            <figure>
+                                <img src="Imagens/Listas.png" alt="Exemplo do uso de listas" title="Tag_ul/ol">
+                                <figcaption>
+                                    <strong>Imagem 10</strong>. Exemplo do uso de listas. <strong>Fonte</strong>: Do autor
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <h4>Links no HTMl</h4>
+                            <p>&nbsp&nbsp&nbsp&nbsp&nbspOs links em uma pagina Web são utilizados para direcionar o usuário para outras paginas ou para outra parte da mesma pagina.
+                                Na Liguagem HTML podemos utilizar duas <em>tags</em> para isso, sendo elas:
+                            </p>
+                            <dl>
+                                <dt><mark>&lt;link&gt;</mark></dt>
+                                <dd>
+                                    Esta tag é usada para estabelecer uma conexão / relacionamento entre o documento atual e alguns recursos externos que estão associados à página da web, comumente utilizado no espaço do cabeçalho 
+                                    (&lt;head&gt;). O recurso pode ser um arquivo CSS, um ícone usado no site, um manifesto, etc. <br>
+                                    Por padrão, essa <em>tag</em> recebe dois atributos, o "rel" (Relacionamento com recurso), Ele especifica qual tipo de recurso
+                                    está sendo associado a esta tag. E o "href" (URL), Ele especifica a localização do recurso. Abaixo podemos ver como utilizar essa <em>tag</em>.
+                                    <figure>
+                                        <img src="Imagens/link.png" alt="Exemplo do uso do Link" title="Tag_Link">
+                                        <figcaption>
+                                            <strong>Imagem 11</strong>. Exemplo do uso da tag &lt;link&gt;. <strong>Fonte:</strong> Do autor.
+                                        </figcaption>
+                                    </figure>
+                                </dd>
+                                <dt><mark>&lt;a&gt;</mark></dt>
+                                <dd>
+                                    Esta tag estabelece um hiperlink para um documento externo ou interno de HTML, um endereço como e-mail ou telefone e algum tipo de endereço URL externo, comumente
+                                    utilizado pelos desenvolvedores dentro do corpo HTML (&lt;body&gt;). Os atributos "rel" e "href" descrito na tag do link também pode ser usado com a tag. Contudo, o mais comum
+                                    é o uso somente do atributo "href". <br>
+                                    Com a imagem abaixo podemos ver como funciona como é utilizado essa <em>tag</em> no documento HTML. No primeiro exemplo, temos o uso dessa <em>tag</em> para levar o usuário a
+                                    outra pagina Web. Já no segundo exemplo, é utilizada para levar o usuario para outra parte da mesma pagina.
+                                    <figure>
+                                        <img src="Imagens/tagA.png" alt="Exemplo do uso da tag a" title="Tag-a">
+                                        <figcaption>
+                                            <strong>Imagem 12.</strong> Exemplo do uso da tag &lt;a&gt;. <strong>Fonte:</strong> Do autor.
+                                        </figcaption>
+                                    </figure>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ol>
+
+                </div>
+                
+            </div>
+            <br>
+            <strong>Autor do Material:</strong> Adryan Cavalcante Cosmo, 2022.
+        </div>
+    </body>
+</html>

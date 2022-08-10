@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(65, 65, 90);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    color: blanchedalmond;
+
+}
+.pag{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(84, 95, 104);
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.header{
+    text-align: center;
+}
+
+.title{
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu{
+    overflow: hidden;
+    background-color: rgb(151, 182, 223);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.link{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(50, 74, 82);
+}
+
+.link:hover{
+    color: aqua;
+}
+
+.row{
+    display: flex;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.column_left{
+    width: 2750px;
+    background-color: rgb(92, 109, 114);
+    border-radius: 20px;
+    margin-right: 5px ;
+}
+
+.card{
+    margin: 15px;
+}
+
+h2{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.png1{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+
+.fig1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p1{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.p2{
+    text-align: justify;
+    font-size: 14px;
+}
+
+.column_right{
+    width: 1500px;
+    height: 100%;
+    background-color: rgb(92, 109, 114);
+    border-radius: 20px;
+    margin-left: 5px ;
+
+}
+
+.png2{
+    width: 80%;
+    height: 80%;
+}
+
+.fig2{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p3{
+    text-align: justify;
+    font-size: 14px;
+}
+
+.p4{
+    text-align: justify;
+    font-size: 12px;
+}
+
+
