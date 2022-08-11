@@ -6,13 +6,13 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json);
-//const router = express.Router(); 
+const router = express.Router();
 
 //rotas
 const index = require('./routes/index');
 const apiRouter = require('./routes/apiRoute');
-const produtosRoute = require('./routes/produtosRoute');
+//const produtosRoute = require('./routes/produtosRoute');
 app.use('/', index);
 app.use('/rotas', apiRouter);
-app.use('/produtos', produtosRoute);
+//app.use('/produtos', produtosRoute);
 module.exports = app;
