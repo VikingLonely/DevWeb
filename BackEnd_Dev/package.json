@@ -1,0 +1,20 @@
+{
+  "name": "backend_dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Viking_Lonely",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/server.js"
+
+  }
+}
