@@ -11,7 +11,6 @@ exports.put = (req, res, next) => {
 
 exports.delete = (req, res, next) => {
     let id = req.params.id;
-    console.log(req.params.nome);
     console.log(id);
     res.status(200).send("Req DELETE OK");
 };
